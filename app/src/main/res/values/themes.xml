@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema Púrpura-->
+    <style name="Theme.039_07.Purple" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">#F3DFFD</item>
+        <item name="buttonStyle">@style/Widget.Button.Purple</item>
+        <item name="android:textAppearance">@style/TextAppearance.039_07.Purple</item>
+    </style>
+
+    <!-- Tema Rosado -->
+    <style name="Theme.039_07.Pink" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">#fcdffd</item>
+        <item name="buttonStyle">@style/Widget.Button.Pink</item>
+        <item name="android:textAppearance">@style/TextAppearance.039_07.Pink</item>
+    </style>
+
+    <!-- Estilo para Buttons (Tema Púrpura) -->
+    <style name="Widget.Button.Purple" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#e9fddf</item>
+        <item name="android:textColor">#8c8f8b</item>
+    </style>
+
+    <!-- Estilo para Buttons (Tema Rosado) -->
+    <style name="Widget.Button.Pink" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#E0FDDF</item>
+        <item name="android:textColor">#8d8f8b</item>
+    </style>
+
+    <!-- Estilo para TextView (Tema Púrpura) -->
+    <style name="TextAppearance.039_07.Purple" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#9C979F</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Estilo para TextView (Tema Rosado) -->
+    <style name="TextAppearance.039_07.Pink" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#8f8b8f</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Theme._039_07.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <!-- Radius of the outer bound of widgets to make the rounded corners -->
+        <item name="appWidgetRadius">16dp</item>
+        <!--
+        Radius of the inner view's bound of widgets to make the rounded corners.
+        It needs to be 8dp or less than the value of appWidgetRadius
+        -->
+        <item name="appWidgetInnerRadius">8dp</item>
+    </style>
+
+    <style name="Theme._039_07.AppWidgetContainer" parent="Theme._039_07.AppWidgetContainerParent">
+        <!-- Apply padding to avoid the content of the widget colliding with the rounded corners -->
+        <item name="appWidgetPadding">16dp</item>
+    </style>
+</resources>
